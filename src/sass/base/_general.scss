@@ -1,0 +1,32 @@
+.counter {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--red);
+    width: fit-content;
+    height: fit-content;
+
+    .plus,
+    .minus {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--red);
+        color: var(--white);
+        font-size: 14px;
+        line-height: 1;
+        cursor: pointer;
+    }
+
+    input {
+        background-color: unset;
+        border-radius: unset;
+        border: unset;
+        width: 35px;
+        height: 20px;
+        text-align: center;
+        font-size: 14px;
+        flex: 0 0 auto;
+    }
+}
