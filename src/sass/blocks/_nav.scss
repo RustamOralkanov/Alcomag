@@ -16,7 +16,7 @@
 
     &-search {
         display: flex;
-        align-items: end;
+        align-items: flex-end;
         gap: 24px;
         width: 100%;
         position: relative;
@@ -69,7 +69,7 @@
 
     &-links {
         display: flex;
-        align-items: end;
+        align-items: flex-end;
         gap: 30px;
         position: relative;
     }
@@ -264,10 +264,11 @@
         display: flex;
         align-items: center;
         gap: 50px;
+        position: relative;
     }
 
     &-cat {
-        height: 60px;
+        height: 50px;
         display: flex;
         align-items: center;
         &-link {
@@ -291,9 +292,23 @@
             font-size: 20px;
             font-weight: 500;
             padding: 0 26px;
-            height: 60px;
+            height: 50px;
             i {
                 font-size: 24px;
+            }
+        }
+
+        &-menu {
+            left: 0;
+            width: 100%;
+            border-radius: 0;
+            border: unset;
+            box-shadow: var(--shadow);
+            padding: 40px 28px;
+
+            &-list {
+                padding-left: 0;
+                list-style-type: none;
             }
         }
     }

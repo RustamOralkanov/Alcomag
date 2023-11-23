@@ -10,6 +10,8 @@
 
 @import "blocks/header";
 @import "blocks/nav";
+@import "blocks/card";
+@import "blocks/category";
 
 body {
     box-sizing: border-box;
@@ -21,6 +23,12 @@ body {
 }
 
 input {
+    &:focus-visible {
+        outline: unset;
+    }
+}
+
+button {
     &:focus-visible {
         outline: unset;
     }
