@@ -1,0 +1,49 @@
+.seo {
+    .container {
+        padding: 40px;
+        border: 1px solid var(--grey);
+    }
+    &-title {
+        color: var(--dark);
+
+        text-align: center;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+
+        b {
+            font-family: "Montserrat";
+        }
+
+        span {
+            color: var(--red);
+        }
+    }
+
+    &-paragraph {
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    &-wrapper {
+        div {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+            h4 {
+                color: var(--red);
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 16px;
+            }
+
+            p {
+                font-size: 14px;
+                padding-left: 16px;
+            }
+        }
+    }
+}
