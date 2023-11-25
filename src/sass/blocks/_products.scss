@@ -1,0 +1,188 @@
+.products {
+    &-columns {
+        display: flex;
+        gap: 20px;
+    }
+
+    &-column {
+        &:first-child {
+            flex: 0 0 calc(25% - 10px);
+        }
+
+        &:last-child {
+            flex: 0 0 calc(75% - 10px);
+        }
+
+        &-title {
+            color: var(--dark);
+            font-family: "Montserrat";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
+        &-filter {
+            border-bottom: 1px solid var(--grey);
+            &-btn {
+                color: var(--dark);
+                font-size: 18px;
+                font-weight: 500;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 12px 0;
+                &[aria-expanded="true"] {
+                    i {
+                        transform: rotate(0deg);
+                    }
+                }
+
+                i {
+                    font-size: 24px;
+                    line-height: 1;
+                    transform: rotate(180deg);
+                }
+            }
+
+            &-inputs {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                padding-bottom: 16px;
+
+                .form-check {
+                    display: flex;
+                    align-items: flex-end;
+                    gap: 8px;
+                    min-height: unset;
+                    margin-bottom: 0;
+
+                    &-input {
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 0;
+                        border-color: var(--red);
+
+                        &:checked {
+                            background-color: var(--red);
+                        }
+
+                        &:focus {
+                            box-shadow: unset;
+                        }
+                    }
+
+                    &-label {
+                        color: var(--dark);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        line-height: 1;
+                    }
+                }
+            }
+        }
+
+        &-labels {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        &-label {
+            padding: 4px 12px;
+            border: 1px solid var(--grey);
+            cursor: pointer;
+            transition: all 0.4s ease-in-out;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: capitalize;
+
+            &.active {
+                border: 1px solid var(--red);
+                background-color: var(--red);
+                color: var(--white);
+            }
+
+            &:hover {
+                border: 1px solid var(--red);
+                background-color: var(--red);
+                color: var(--white);
+            }
+        }
+
+        &-counts {
+            margin-top: 24px;
+            display: flex;
+            justify-content: space-between;
+
+            div {
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+
+                .form-select {
+                    padding: 0;
+                    border: unset;
+                    width: fit-content;
+                    font-size: 18px;
+                    color: var(--red);
+                    font-weight: 700;
+                    background-image: unset;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &-wrapper {
+            margin-top: 24px;
+            gap: 20px;
+            display: flex;
+            flex-wrap: wrap;
+
+            .card {
+                width: calc(33% - 11px);
+            }
+        }
+
+        &-navigation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 70px;
+
+            .pagination {
+                margin-bottom: 0;
+                display: flex;
+                gap: 5px;
+
+                .page {
+                    &-link {
+                        border-radius: 0;
+                        border: 1px solid var(--red);
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: var(--red);
+                        font-family: "Montserrat";
+
+                        span {
+                            font-size: 18px;
+                            line-height: 1;
+                        }
+
+                        &.active,
+                        &:hover {
+                            background-color: var(--red);
+                            color: var(--white);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

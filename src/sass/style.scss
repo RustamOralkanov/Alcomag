@@ -10,10 +10,15 @@
 
 @import "blocks/header";
 @import "blocks/nav";
+@import "blocks/breadcrumbs";
 @import "blocks/card";
 @import "blocks/category";
 @import "blocks/brands";
 @import "blocks/seo";
+@import "blocks/footer";
+
+@import "blocks/products";
+@import "blocks/product";
 
 body {
     box-sizing: border-box;
@@ -30,6 +35,18 @@ input {
     }
 }
 
+select {
+    &:focus-visible {
+        outline: unset !important;
+    }
+
+    &:focus {
+        border-color: unset !important;
+        outline: 0;
+        box-shadow: unset !important;
+    }
+}
+
 button {
     &:focus-visible {
         outline: unset;
@@ -41,4 +58,37 @@ a {
     &:hover {
         color: unset;
     }
+
+    &:focus-visible {
+        outline: unset;
+    }
+
+    &:focus {
+        color: unset !important;
+        background-color: unset !important;
+        outline: unset !important;
+        box-shadow: unset !important;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: unset;
+    border-radius: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--red);
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--red);
 }

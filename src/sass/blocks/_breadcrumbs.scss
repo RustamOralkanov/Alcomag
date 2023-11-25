@@ -1,0 +1,32 @@
+.breadcrumbs {
+    padding: 15px 0;
+
+    &-list {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        padding-left: 0;
+        list-style-type: none;
+        margin: 0;
+        li {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            font-size: 14px;
+            color: (--dark);
+            font-weight: 600;
+            font-family: Montserrat;
+            &:not(:last-child)::after {
+                content: "/";
+                display: block;
+                color: var(--darkgrey);
+                font-weight: 200;
+            }
+
+            a {
+                color: var(--darkgrey);
+                font-weight: 300;
+            }
+        }
+    }
+}

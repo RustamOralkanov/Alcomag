@@ -1,15 +1,8 @@
 @font-face {
     font-family: "fontello";
-    src: url("../../fonts/fontello.woff2") format("woff2");
+    src: url("../fonts/fontello.woff2?38569731") format("woff2");
     font-weight: normal;
     font-style: normal;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-    @font-face {
-        font-family: "fontello";
-        src: url("../font/fontello.svg?56450455#fontello") format("svg");
-    }
 }
 
 [class^="icon-"]:before,
@@ -17,22 +10,15 @@
     font-family: "fontello";
     font-style: normal;
     font-weight: normal;
+
     display: inline-block;
     text-decoration: inherit;
-    line-height: 1;
     text-align: center;
-    font-variant: normal;
-    text-transform: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-heart-empty:before {
-    content: "\e800";
-}
 .icon-arrow-down:before {
     content: "\e801";
-}
+} /* '' */
 .icon-arrow-left:before {
     content: "\e802";
 } /* '' */
@@ -99,3 +85,6 @@
 .icon-pluse:before {
     content: "\e817";
 } /* '' */
+.icon-heart-empty-1:before {
+    content: "\e818";
+} /* '' */

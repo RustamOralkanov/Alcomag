@@ -49,4 +49,43 @@
             object-fit: cover;
         }
     }
+
+    &-main {
+        display: block;
+        max-width: 309px;
+        height: 309px;
+        width: calc(25% - 15px);
+        background: var(--white);
+        padding: 30px;
+        box-shadow: var(--shadow);
+        position: relative;
+        overflow: hidden;
+
+        &-title {
+            color: var(--dark);
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        &-circle {
+            position: absolute;
+            width: 242px;
+            height: 242px;
+            background-color: #f46a53;
+            border-radius: 100%;
+            right: -45px;
+            bottom: -85px;
+        }
+
+        &-img {
+            width: 120px;
+            height: 200px;
+            object-fit: contain;
+            position: absolute;
+            bottom: 0;
+            z-index: 2;
+            right: 25px;
+        }
+    }
 }
