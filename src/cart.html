@@ -5665,319 +5665,138 @@
                 <div class="container">
                     <ul class="breadcrumbs-list">
                         <li><a href="index.html">Главная</a></li>
-                        <li><a href="catalog.html">Каталог напитков</a></li>
-                        <li><a href="products.html">Вино</a></li>
-                        <li>Errazuriz Estate Carmenere Reserva</li>
+                        <li>Корзина</li>
                     </ul>
                 </div>
             </section>
-            <!-- CATEGORY -->
-            <section class="product mt-30">
+            <!-- EMPTY CART -->
+            <section class="cart-empty">
                 <div class="container">
-                    <div class="product-columns">
-                        <div class="product-column">
-                            <div class="product-column-image">
-                                <img src="./img/wine.png" alt="image" />
-                                <span class="label">Новинка</span>
-                            </div>
+                    <div class="row">
+                        <div
+                            class="col-12 d-flex flex-column justify-content-center align-items-center cart-empty-container"
+                        >
+                            <i class="icon-upset"></i>
+                            <h2>В корзине пусто</h2>
+                            <h5>
+                                Перейдите в каталог, чтобы выбрать товар и
+                                оформить заказ
+                            </h5>
+                            <a href="products.html">В каталог</a>
                         </div>
-                        <div class="product-column">
-                            <h5 class="product-column-cat">Вино</h5>
-                            <h2 class="product-column-title">
-                                Errazuriz Estate Carmenere Reserva
-                            </h2>
-                            <h3 class="product-column-price">
-                                <div class="new">7 820 ₸</div>
-                                <div class="old">9 200 ₸</div>
-                            </h3>
-                            <div class="product-column-actions">
-                                <div class="counter">
-                                    <div class="minus">
-                                        <i class="icon-minus"></i>
+                    </div>
+                </div>
+            </section>
+            <!-- /EMPTY CART -->
+
+            <!-- CART -->
+            <section class="cart mt-30">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-7">
+                            <div class="cart-wrapper">
+                                <div class="cart-item">
+                                    <div class="cart-item-image">
+                                        <img src="./img/wine.png" alt="wine" />
                                     </div>
-                                    <input type="text" value="1" />
-                                    <div class="plus">
-                                        <i class="icon-pluse"></i>
+                                    <div class="cart-item-middle">
+                                        <div class="cart-item-title">
+                                            Errazuriz Estate Carmenere Reserva
+                                        </div>
+                                        <div class="cart-item-price">
+                                            <div class="new">7 820 ₸</div>
+                                            <div class="old">9 220 ₸</div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-item-end">
+                                        <div class="cart-item-delete">
+                                            <i class="icon-trash"></i>
+                                        </div>
+                                        <div class="counter">
+                                            <div class="minus">
+                                                <i class="icon-minus"></i>
+                                            </div>
+                                            <input type="text" value="1" />
+                                            <div class="plus">
+                                                <i class="icon-pluse"></i>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <button>
-                                    <i class="icon-cart"></i>
-                                    В корзину
+                                <div class="cart-item">
+                                    <div class="cart-item-image">
+                                        <img src="./img/wine.png" alt="wine" />
+                                    </div>
+                                    <div class="cart-item-middle">
+                                        <div class="cart-item-title">
+                                            Errazuriz Estate Carmenere Reserva
+                                        </div>
+                                        <div class="cart-item-price">
+                                            <div class="new">7 820 ₸</div>
+                                            <div class="old">9 220 ₸</div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-item-end">
+                                        <div class="cart-item-delete">
+                                            <i class="icon-trash"></i>
+                                        </div>
+                                        <div class="counter">
+                                            <div class="minus">
+                                                <i class="icon-minus"></i>
+                                            </div>
+                                            <input type="text" value="1" />
+                                            <div class="plus">
+                                                <i class="icon-pluse"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-item">
+                                    <div class="cart-item-image">
+                                        <img src="./img/wine.png" alt="wine" />
+                                    </div>
+                                    <div class="cart-item-middle">
+                                        <div class="cart-item-title">
+                                            Errazuriz Estate Carmenere Reserva
+                                        </div>
+                                        <div class="cart-item-price">
+                                            <div class="new">7 820 ₸</div>
+                                            <div class="old">9 220 ₸</div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-item-end">
+                                        <div class="cart-item-delete">
+                                            <i class="icon-trash"></i>
+                                        </div>
+                                        <div class="counter">
+                                            <div class="minus">
+                                                <i class="icon-minus"></i>
+                                            </div>
+                                            <input type="text" value="1" />
+                                            <div class="plus">
+                                                <i class="icon-pluse"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 offset-1">
+                            <div class="cart-actions">
+                                <div class="cart-actions-top">
+                                    <h5>Итого :</h5>
+                                    <h5 class="price">23 460 ₸</h5>
+                                </div>
+                                <button class="cart-actions-btn">
+                                    <i class="icon-mandat"></i>
+                                    Оформить заказ
                                 </button>
                             </div>
-                            <div class="product-column-info">
-                                <div>Артикул: <span>1234</span></div>
-                                <div>Страна, регион: <span>Чили</span></div>
-                                <div>Производитель: <span>Errazuriz</span></div>
-                                <div>Крепкость: <span>13,5%</span></div>
-                                <div>Тип: <span>Сухое</span></div>
-                                <div>Цвет: <span>Красное</span></div>
-                                <div>Объем: <span>0.75л</span></div>
-                            </div>
-                            <div class="product-column-quality"></div>
-                        </div>
-                        <div class="product-column">
-                            <div class="product-column-features">
-                                <div class="product-column-feature">
-                                    <i class="icon-check"></i>
-                                    100% гарантия качества! Весь товар
-                                    сертифицирован
-                                </div>
-                                <div class="product-column-feature">
-                                    <i class="icon-fast-delivery"></i>
-                                    Доставка нашим курьером или самовывоз с
-                                    нашего магазина
-                                </div>
-                                <div class="product-column-feature">
-                                    <i class="icon-credit-card"></i>
-                                    Оплата картой Visa / Mastercard или
-                                    наличными
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <section class="description mt-90">
-                <div class="container">
-                    <h2 class="title mb-40">Описание</h2>
-                    <p class="description-text">
-                        Очень приятное для употребления красное сухое вино
-                        Estate Carmenere производится на основе винограда
-                        Карменере с добавлением сорта Пти Вердо. Виноградники
-                        высажены на орошаемых суглинистых почвах. Благодаря
-                        влиянию тихоокеанских бризов в Центральной Долине
-                        преобладает средиземноморский климат с умеренно теплыми
-                        летними днями. Резкое колебание суточных температур
-                        способствует созреванию винограда с интенсивным цветом и
-                        концентрированным вкусом. Обычно сбор урожая
-                        производится в первые две недели мая. Собранные вручную
-                        ягоды, прошедшие тщательный отбор на сортировочных
-                        столах, после аккуратного дробления отправляются в
-                        стальные емкости для дальнейшего алкогольного брожения,
-                        которое протекает при температуре 28-29 °C. В течение
-                        этого процесса сусло регулярно перекачивается 2 раза в
-                        сутки для максимального извлечения ароматических и
-                        дубильных веществ. Затем производится мацерация, которая
-                        в зависимости от сорта винограда и участка, на котором
-                        он был выращен, может длиться 10-26 дней. До полного
-                        созревания вино выдерживается в бочках из древесины
-                        французского и американского дуба на протяжении 8
-                        месяцев. Перед розливом осветленное и стабилизированное
-                        вино подвергают легкой фильтрации.
-                    </p>
-                </div>
-            </section>
-
-            <section class="similar mt-90">
-                <div class="container">
-                    <h2 class="title">Похожие товары</h2>
-                    <div class="card-wrapper">
-                        <div class="card">
-                            <div class="card-label">Новинка</div>
-                            <div class="card-favorite active">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="25"
-                                    height="25"
-                                    viewBox="0 0 25 25"
-                                    fill="none"
-                                >
-                                    <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M21.7156 9.21562C21.7156 15.46 12.7159 20.7156 12.7159 20.7156C12.7159 20.7156 3.71558 15.3823 3.71558 9.22827C3.71558 6.71562 5.71558 4.71562 8.21558 4.71562C10.7156 4.71562 12.7156 7.71562 12.7156 7.71562C12.7156 7.71562 14.7156 4.71562 17.2156 4.71562C19.7156 4.71562 21.7156 6.71562 21.7156 9.21562Z"
-                                        stroke="#bd280f"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </div>
-                            <a href="#" class="card-img">
-                                <img src="./img/mock.png" alt="whisky" />
-                            </a>
-                            <div class="card-category">Виски</div>
-                            <a href="#" class="card-title">
-                                <h4>
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit.
-                                </h4>
-                            </a>
-                            <div class="card-info">
-                                <div class="card-info-item">
-                                    <i class="icon-map"></i>
-                                    Франция
-                                </div>
-                                <div class="card-info-item">
-                                    <i class="icon-bottle"></i>
-                                    0.7l
-                                </div>
-                            </div>
-                            <div class="card-price">
-                                <div class="new">24 650 ₸</div>
-                                <div class="old">28 500 ₸</div>
-                            </div>
-                            <button class="card-buy">
-                                <i class="icon-cart"></i>
-                                Купить
-                            </button>
-                        </div>
-                        <div class="card">
-                            <div class="card-label">Новинка</div>
-                            <div class="card-favorite active">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="25"
-                                    height="25"
-                                    viewBox="0 0 25 25"
-                                    fill="none"
-                                >
-                                    <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M21.7156 9.21562C21.7156 15.46 12.7159 20.7156 12.7159 20.7156C12.7159 20.7156 3.71558 15.3823 3.71558 9.22827C3.71558 6.71562 5.71558 4.71562 8.21558 4.71562C10.7156 4.71562 12.7156 7.71562 12.7156 7.71562C12.7156 7.71562 14.7156 4.71562 17.2156 4.71562C19.7156 4.71562 21.7156 6.71562 21.7156 9.21562Z"
-                                        stroke="#bd280f"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </div>
-                            <a href="#" class="card-img">
-                                <img src="./img/mock.png" alt="whisky" />
-                            </a>
-                            <div class="card-category">Виски</div>
-                            <a href="#" class="card-title">
-                                <h4>
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit.
-                                </h4>
-                            </a>
-                            <div class="card-info">
-                                <div class="card-info-item">
-                                    <i class="icon-map"></i>
-                                    Франция
-                                </div>
-                                <div class="card-info-item">
-                                    <i class="icon-bottle"></i>
-                                    0.7l
-                                </div>
-                            </div>
-                            <div class="card-price">
-                                <div class="new">24 650 ₸</div>
-                                <div class="old">28 500 ₸</div>
-                            </div>
-                            <button class="card-buy">
-                                <i class="icon-cart"></i>
-                                Купить
-                            </button>
-                        </div>
-                        <div class="card">
-                            <div class="card-label">Новинка</div>
-                            <div class="card-favorite active">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="25"
-                                    height="25"
-                                    viewBox="0 0 25 25"
-                                    fill="none"
-                                >
-                                    <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M21.7156 9.21562C21.7156 15.46 12.7159 20.7156 12.7159 20.7156C12.7159 20.7156 3.71558 15.3823 3.71558 9.22827C3.71558 6.71562 5.71558 4.71562 8.21558 4.71562C10.7156 4.71562 12.7156 7.71562 12.7156 7.71562C12.7156 7.71562 14.7156 4.71562 17.2156 4.71562C19.7156 4.71562 21.7156 6.71562 21.7156 9.21562Z"
-                                        stroke="#bd280f"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </div>
-                            <a href="#" class="card-img">
-                                <img src="./img/mock.png" alt="whisky" />
-                            </a>
-                            <div class="card-category">Виски</div>
-                            <a href="#" class="card-title">
-                                <h4>
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit.
-                                </h4>
-                            </a>
-                            <div class="card-info">
-                                <div class="card-info-item">
-                                    <i class="icon-map"></i>
-                                    Франция
-                                </div>
-                                <div class="card-info-item">
-                                    <i class="icon-bottle"></i>
-                                    0.7l
-                                </div>
-                            </div>
-                            <div class="card-price">
-                                <div class="new">24 650 ₸</div>
-                                <div class="old">28 500 ₸</div>
-                            </div>
-                            <button class="card-buy">
-                                <i class="icon-cart"></i>
-                                Купить
-                            </button>
-                        </div>
-                        <div class="card">
-                            <div class="card-label">Новинка</div>
-                            <div class="card-favorite active">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="25"
-                                    height="25"
-                                    viewBox="0 0 25 25"
-                                    fill="none"
-                                >
-                                    <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M21.7156 9.21562C21.7156 15.46 12.7159 20.7156 12.7159 20.7156C12.7159 20.7156 3.71558 15.3823 3.71558 9.22827C3.71558 6.71562 5.71558 4.71562 8.21558 4.71562C10.7156 4.71562 12.7156 7.71562 12.7156 7.71562C12.7156 7.71562 14.7156 4.71562 17.2156 4.71562C19.7156 4.71562 21.7156 6.71562 21.7156 9.21562Z"
-                                        stroke="#bd280f"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </div>
-                            <a href="#" class="card-img">
-                                <img src="./img/mock.png" alt="whisky" />
-                            </a>
-                            <div class="card-category">Виски</div>
-                            <a href="#" class="card-title">
-                                <h4>
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit.
-                                </h4>
-                            </a>
-                            <div class="card-info">
-                                <div class="card-info-item">
-                                    <i class="icon-map"></i>
-                                    Франция
-                                </div>
-                                <div class="card-info-item">
-                                    <i class="icon-bottle"></i>
-                                    0.7l
-                                </div>
-                            </div>
-                            <div class="card-price">
-                                <div class="new">24 650 ₸</div>
-                                <div class="old">28 500 ₸</div>
-                            </div>
-                            <button class="card-buy">
-                                <i class="icon-cart"></i>
-                                Купить
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- /CATEGORY -->
+            <!-- /CART -->
         </main>
         <!-- FOOTER -->
         <footer class="footer">

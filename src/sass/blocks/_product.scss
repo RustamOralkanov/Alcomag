@@ -8,8 +8,11 @@
         &:first-child {
             flex: 0 0 calc(40% - 10px);
         }
-        &:last-child {
+        &:nth-child(2) {
             flex: 0 0 calc(35% - 10px);
+        }
+        &:nth-child(3) {
+            flex: 0 0 calc(25% + 20px);
         }
 
         &-image {
@@ -145,6 +148,33 @@
                     font-weight: 600;
                     line-height: normal;
                 }
+            }
+        }
+
+        &-features {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        &-feature {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--green);
+            padding: 16px;
+            color: var(--white);
+            font-size: 14px;
+            i {
+                font-size: 28px;
+                display: block;
+                width: 34px;
+                height: 34px;
+                line-height: 1;
+                font-weight: 200;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
     }
