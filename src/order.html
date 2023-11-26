@@ -25,138 +25,147 @@
                 <div class="container">
                     <ul class="breadcrumbs-list">
                         <li><a href="index.html">Главная</a></li>
-                        <li>Корзина</li>
+                        <li><a href="cart.html">Корзина</a></li>
+                        <li>Оформление заказа</li>
                     </ul>
                 </div>
             </section>
-            <!-- EMPTY CART -->
-            <!-- <section class="cart-empty">
-                <div class="container">
-                    <div class="row">
-                        <div
-                            class="col-12 d-flex flex-column justify-content-center align-items-center cart-empty-container"
-                        >
-                            <i class="icon-upset"></i>
-                            <h2>В корзине пусто</h2>
-                            <h5>
-                                Перейдите в каталог, чтобы выбрать товар и
-                                оформить заказ
-                            </h5>
-                            <a href="products.html">В каталог</a>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-            <!-- /EMPTY CART -->
 
-            <!-- CART -->
-            <section class="cart mt-30">
+            <section class="order mt-30">
                 <div class="container">
                     <div class="row">
-                        <div class="col-7">
-                            <div class="cart-wrapper">
-                                <div class="cart-item">
-                                    <div class="cart-item-image">
-                                        <img src="./img/wine.png" alt="wine" />
-                                    </div>
-                                    <div class="cart-item-middle">
-                                        <div class="cart-item-title">
-                                            Errazuriz Estate Carmenere Reserva
-                                        </div>
-                                        <div class="cart-item-price">
-                                            <div class="new">7 820 ₸</div>
-                                            <div class="old">9 220 ₸</div>
-                                        </div>
-                                    </div>
-                                    <div class="cart-item-end">
-                                        <div class="cart-item-delete">
-                                            <i class="icon-trash"></i>
-                                        </div>
-                                        <div class="counter">
-                                            <div class="minus">
-                                                <i class="icon-minus"></i>
-                                            </div>
-                                            <input type="text" value="1" />
-                                            <div class="plus">
-                                                <i class="icon-pluse"></i>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div class="col-4">
+                            <form class="order-wrapper">
+                                <h3 class="order-title">Покупатель</h3>
+                                <span class="divider"></span>
+                                <div class="mb-3">
+                                    <label class="form-label"
+                                        >Ф.И.О. <span>*</span></label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Иван Иванов Иванович"
+                                    />
                                 </div>
-                                <div class="cart-item">
-                                    <div class="cart-item-image">
-                                        <img src="./img/wine.png" alt="wine" />
-                                    </div>
-                                    <div class="cart-item-middle">
-                                        <div class="cart-item-title">
-                                            Errazuriz Estate Carmenere Reserva
-                                        </div>
-                                        <div class="cart-item-price">
-                                            <div class="new">7 820 ₸</div>
-                                            <div class="old">9 220 ₸</div>
-                                        </div>
-                                    </div>
-                                    <div class="cart-item-end">
-                                        <div class="cart-item-delete">
-                                            <i class="icon-trash"></i>
-                                        </div>
-                                        <div class="counter">
-                                            <div class="minus">
-                                                <i class="icon-minus"></i>
-                                            </div>
-                                            <input type="text" value="1" />
-                                            <div class="plus">
-                                                <i class="icon-pluse"></i>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="mb-3">
+                                    <label class="form-label"
+                                        >Номер телефона <span>*</span></label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="+7 (777) 777 77 77"
+                                    />
                                 </div>
-                                <div class="cart-item">
-                                    <div class="cart-item-image">
-                                        <img src="./img/wine.png" alt="wine" />
-                                    </div>
-                                    <div class="cart-item-middle">
-                                        <div class="cart-item-title">
-                                            Errazuriz Estate Carmenere Reserva
-                                        </div>
-                                        <div class="cart-item-price">
-                                            <div class="new">7 820 ₸</div>
-                                            <div class="old">9 220 ₸</div>
-                                        </div>
-                                    </div>
-                                    <div class="cart-item-end">
-                                        <div class="cart-item-delete">
-                                            <i class="icon-trash"></i>
-                                        </div>
-                                        <div class="counter">
-                                            <div class="minus">
-                                                <i class="icon-minus"></i>
-                                            </div>
-                                            <input type="text" value="1" />
-                                            <div class="plus">
-                                                <i class="icon-pluse"></i>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="mb-3">
+                                    <label class="form-label"
+                                        >E-mail <span>*</span></label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="ivanov@ivan.ru"
+                                    />
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label"
+                                        >Адрес доставки <span>*</span></label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="г. Алматы, ул. Достык 37"
+                                    />
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label"
+                                        >Комментарий</label
+                                    >
+                                    <textarea
+                                        class="form-control"
+                                        placeholder="Комментарий к вашему заказа"
+                                    ></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-4">
+                            <div class="order-wrapper">
+                                <h3 class="order-title">Доставка</h3>
+                                <span class="divider"></span>
+                                <div class="form-check">
+                                    <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="delivery"
+                                    />
+                                    <label class="form-check-label"
+                                        >Cамовывоз <span>Бесплатно</span></label
+                                    >
+                                </div>
+                                <div class="form-check">
+                                    <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="delivery"
+                                    />
+                                    <label class="form-check-label"
+                                        >Доставка курьером
+                                        <span>от 1 400 ₸</span></label
+                                    >
+                                </div>
+                            </div>
+                            <div class="order-wrapper mt-20">
+                                <h3 class="order-title">Оплата</h3>
+                                <span class="divider"></span>
+                                <div class="form-check">
+                                    <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="payment"
+                                    />
+                                    <label class="form-check-label"
+                                        >Оплата картой онлайн
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="payment"
+                                    />
+                                    <label class="form-check-label"
+                                        >Оплата наличными</label
+                                    >
+                                </div>
+                                <div class="form-check">
+                                    <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="payment"
+                                    />
+                                    <label class="form-check-label"
+                                        >Оплата через Kaspi QR</label
+                                    >
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 offset-1">
-                            <div class="cart-actions">
-                                <div class="cart-actions-top">
-                                    <h5>Итого :</h5>
-                                    <h5 class="price">23 460 ₸</h5>
+                        <div class="col-4">
+                            <div class="order-wrapper">
+                                <h3 class="order-title">Ваш заказ</h3>
+                                <span class="divider"></span>
+                                <div class="order-total">
+                                    <h4>Сумма к оплате:</h4>
+                                    <h4>23 460 ₸</h4>
                                 </div>
-                                <button class="cart-actions-btn">
-                                    <i class="icon-mandat"></i>
-                                    Оформить заказ
+                                <button class="order-btn">
+                                    Подтвердить заказ
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- /CART -->
         </main>
         <!-- FOOTER -->
         <footer class="footer">

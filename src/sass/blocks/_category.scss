@@ -89,3 +89,35 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+    .category {
+        &-item {
+            width: calc(25% - 15px) !important;
+            &:nth-child(-n + 6) {
+                width: unset;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .category {
+        &-wrapper {
+            gap: 10px;
+        }
+        &-item {
+            width: calc(33% - 5px) !important;
+            &:nth-child(-n + 6) {
+                width: unset;
+            }
+        }
+    }
+}
+
+@media (max-width: 525px) {
+    .category {
+        &-item {
+            width: calc(50% - 5px) !important;
+        }
+    }
+}

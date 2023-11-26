@@ -25,138 +25,43 @@
                 <div class="container">
                     <ul class="breadcrumbs-list">
                         <li><a href="index.html">Главная</a></li>
-                        <li>Корзина</li>
+                        <li><a href="cart.html">Корзина</a></li>
+                        <li>Оформление заказа</li>
                     </ul>
                 </div>
             </section>
-            <!-- EMPTY CART -->
-            <!-- <section class="cart-empty">
-                <div class="container">
-                    <div class="row">
-                        <div
-                            class="col-12 d-flex flex-column justify-content-center align-items-center cart-empty-container"
-                        >
-                            <i class="icon-upset"></i>
-                            <h2>В корзине пусто</h2>
-                            <h5>
-                                Перейдите в каталог, чтобы выбрать товар и
-                                оформить заказ
-                            </h5>
-                            <a href="products.html">В каталог</a>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-            <!-- /EMPTY CART -->
 
-            <!-- CART -->
-            <section class="cart mt-30">
+            <section class="success mt-30">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-7">
-                            <div class="cart-wrapper">
-                                <div class="cart-item">
-                                    <div class="cart-item-image">
-                                        <img src="./img/wine.png" alt="wine" />
-                                    </div>
-                                    <div class="cart-item-middle">
-                                        <div class="cart-item-title">
-                                            Errazuriz Estate Carmenere Reserva
-                                        </div>
-                                        <div class="cart-item-price">
-                                            <div class="new">7 820 ₸</div>
-                                            <div class="old">9 220 ₸</div>
-                                        </div>
-                                    </div>
-                                    <div class="cart-item-end">
-                                        <div class="cart-item-delete">
-                                            <i class="icon-trash"></i>
-                                        </div>
-                                        <div class="counter">
-                                            <div class="minus">
-                                                <i class="icon-minus"></i>
-                                            </div>
-                                            <input type="text" value="1" />
-                                            <div class="plus">
-                                                <i class="icon-pluse"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cart-item">
-                                    <div class="cart-item-image">
-                                        <img src="./img/wine.png" alt="wine" />
-                                    </div>
-                                    <div class="cart-item-middle">
-                                        <div class="cart-item-title">
-                                            Errazuriz Estate Carmenere Reserva
-                                        </div>
-                                        <div class="cart-item-price">
-                                            <div class="new">7 820 ₸</div>
-                                            <div class="old">9 220 ₸</div>
-                                        </div>
-                                    </div>
-                                    <div class="cart-item-end">
-                                        <div class="cart-item-delete">
-                                            <i class="icon-trash"></i>
-                                        </div>
-                                        <div class="counter">
-                                            <div class="minus">
-                                                <i class="icon-minus"></i>
-                                            </div>
-                                            <input type="text" value="1" />
-                                            <div class="plus">
-                                                <i class="icon-pluse"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cart-item">
-                                    <div class="cart-item-image">
-                                        <img src="./img/wine.png" alt="wine" />
-                                    </div>
-                                    <div class="cart-item-middle">
-                                        <div class="cart-item-title">
-                                            Errazuriz Estate Carmenere Reserva
-                                        </div>
-                                        <div class="cart-item-price">
-                                            <div class="new">7 820 ₸</div>
-                                            <div class="old">9 220 ₸</div>
-                                        </div>
-                                    </div>
-                                    <div class="cart-item-end">
-                                        <div class="cart-item-delete">
-                                            <i class="icon-trash"></i>
-                                        </div>
-                                        <div class="counter">
-                                            <div class="minus">
-                                                <i class="icon-minus"></i>
-                                            </div>
-                                            <input type="text" value="1" />
-                                            <div class="plus">
-                                                <i class="icon-pluse"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="success-wrapper">
+                        <div class="success-img">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="80"
+                                height="80"
+                                viewBox="0 0 80 80"
+                                fill="none"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M31.7493 20C31.7493 15.4437 35.443 11.75 39.9993 11.75C44.5557 11.75 48.2494 15.4437 48.2494 20V21.5833H31.7493V20ZM28.2493 25.0833V30C28.2493 30.9665 29.0329 31.75 29.9993 31.75C30.9658 31.75 31.7493 30.9665 31.7493 30V25.0833H48.2494V30C48.2494 30.9665 49.0329 31.75 49.9994 31.75C50.9658 31.75 51.7494 30.9665 51.7494 30V25.0833H58.3788L61.4429 64.9167H18.5558L21.6199 25.0833H28.2493ZM28.2493 21.5833V20C28.2493 13.5107 33.51 8.25 39.9993 8.25C46.4887 8.25 51.7494 13.5107 51.7494 20V21.5833H59.9994C60.9138 21.5833 61.6741 22.2874 61.7442 23.1991L65.0775 66.5324C65.1149 67.0185 64.9479 67.498 64.6167 67.8557C64.2855 68.2134 63.8201 68.4167 63.3327 68.4167H16.666C16.1786 68.4167 15.7132 68.2134 15.382 67.8557C15.0508 67.498 14.8838 67.0185 14.9212 66.5324L18.2545 23.1991C18.3246 22.2874 19.0849 21.5833 19.9994 21.5833H28.2493Z"
+                                    fill="black"
+                                />
+                            </svg>
                         </div>
-                        <div class="col-4 offset-1">
-                            <div class="cart-actions">
-                                <div class="cart-actions-top">
-                                    <h5>Итого :</h5>
-                                    <h5 class="price">23 460 ₸</h5>
-                                </div>
-                                <button class="cart-actions-btn">
-                                    <i class="icon-mandat"></i>
-                                    Оформить заказ
-                                </button>
-                            </div>
-                        </div>
+                        <h2 class="success-title">
+                            Ваш заказ <b>№ 124</b> Оформлен
+                        </h2>
+                        <p class="success-text">
+                            В ближайшее время с вами свяжутся наши менеджеры
+                        </p>
+                        <a href="products.html" class="success-back"
+                            >В каталог</a
+                        >
                     </div>
                 </div>
             </section>
-            <!-- /CART -->
         </main>
         <!-- FOOTER -->
         <footer class="footer">

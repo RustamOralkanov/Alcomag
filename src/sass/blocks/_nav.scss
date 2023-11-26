@@ -436,3 +436,102 @@
         }
     }
 }
+
+@media (max-width: 1400px) {
+    .nav {
+        &-bottom {
+            &-wrapper {
+                gap: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav {
+        &-wrapper {
+            gap: 30px;
+        }
+        &-links {
+            gap: 10px;
+        }
+        &-link {
+            i {
+                font-size: 24px;
+            }
+
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        &-logo {
+            img {
+                height: 30px;
+            }
+        }
+        &-bottom {
+            &-wrapper {
+                gap: 20px;
+            }
+            &-category {
+                &-btn {
+                    height: 40px;
+                    font-size: 16px;
+                    padding: 0 13px;
+                }
+                &-menu {
+                    height: 410px;
+                    &-list {
+                        padding: 30px 0;
+                        gap: 16px;
+
+                        .list-item {
+                            a {
+                                font-size: 16px;
+                            }
+                            &-filter {
+                                gap: 10px;
+                                &-type {
+                                    width: calc(20% - 8px);
+                                    h4 {
+                                        font-size: 16px;
+                                    }
+
+                                    ul {
+                                        li {
+                                            a {
+                                                font-size: 14px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-cat {
+                height: 40px;
+
+                &-link {
+                    font-size: 14px;
+                }
+
+                .nav-bottom-category-menu {
+                    top: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .nav {
+        display: none;
+        &-bottom {
+            display: none;
+        }
+    }
+}

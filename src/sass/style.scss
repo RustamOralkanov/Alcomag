@@ -20,6 +20,10 @@
 @import "blocks/products";
 @import "blocks/product";
 @import "blocks/cart";
+@import "blocks/order";
+@import "blocks/success";
+@import "blocks/search";
+@import "blocks/mobile";
 
 body {
     box-sizing: border-box;
@@ -30,9 +34,15 @@ body {
     background-color: var(--white);
 }
 
-input {
+input,
+textarea {
     &:focus-visible {
         outline: unset;
+    }
+    &:focus {
+        border-color: unset !important;
+        outline: 0;
+        box-shadow: unset !important;
     }
 }
 
@@ -92,4 +102,12 @@ a {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: var(--red);
+}
+
+.form-check-input:checked[type="radio"] {
+    background-image: url("../icons/Check.svg");
+}
+
+.form-check-input:checked[type="checkbox"] {
+    background-image: url("../icons/Check.svg");
 }
