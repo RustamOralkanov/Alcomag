@@ -90,12 +90,42 @@
     }
 }
 
+@media (max-width: 1400px) {
+    .category {
+        &-main {
+            height: 264px;
+
+            &-img {
+                height: 180px;
+            }
+        }
+    }
+}
+
 @media (max-width: 1200px) {
     .category {
         &-item {
             width: calc(25% - 15px) !important;
             &:nth-child(-n + 6) {
                 width: unset;
+            }
+        }
+
+        &-main {
+            height: 219px;
+            &-title {
+                font-size: 20px;
+            }
+
+            &-circle {
+                right: -80px;
+                bottom: -110px;
+            }
+
+            &-img {
+                width: 90px;
+                height: 150px;
+                right: 15px;
             }
         }
     }

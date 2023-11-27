@@ -49,6 +49,25 @@
                     }
                 }
 
+                .dropdown-toggle {
+                    padding: 0;
+                    border: unset;
+                    background-color: unset;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    align-items: center;
+                    justify-content: center;
+                    &:after {
+                        display: none;
+                    }
+                }
+
+                .dropdown-menu {
+                    position: absolute;
+                    top: -8px !important;
+                }
+
                 &-name {
                     color: var(--Dark, #191e27);
                     font-family: "Montserrat";

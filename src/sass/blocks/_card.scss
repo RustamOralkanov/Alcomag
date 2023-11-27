@@ -249,5 +249,11 @@
 @media (max-width: 768px) {
     .card {
         width: calc(50% - 5px);
+        &-price {
+            gap: 8px;
+            .old {
+                font-size: 12px;
+            }
+        }
     }
 }
