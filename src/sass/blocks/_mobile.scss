@@ -9,6 +9,7 @@
         left: 0;
         width: 100%;
         margin: 0;
+        z-index: 9999;
     }
 }
 
@@ -47,25 +48,6 @@
                         align-items: center;
                         color: var(--white);
                     }
-                }
-
-                .dropdown-toggle {
-                    padding: 0;
-                    border: unset;
-                    background-color: unset;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 4px;
-                    align-items: center;
-                    justify-content: center;
-                    &:after {
-                        display: none;
-                    }
-                }
-
-                .dropdown-menu {
-                    position: absolute;
-                    top: -8px !important;
                 }
 
                 &-name {
