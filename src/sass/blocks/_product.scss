@@ -107,16 +107,15 @@
 
             button {
                 background-color: var(--red);
-                border: 1px solid var(--red);
+                border: 2px solid var(--red);
                 color: var(--white);
                 height: 50px;
-                padding: 0 36px;
-
+                padding: 0 20px;
                 display: flex;
                 align-items: center;
-                gap: 8px;
+                gap: 4px;
                 color: var(--white);
-                font-size: 18px;
+                font-size: 16px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
@@ -175,6 +174,182 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .product {
+        &-columns {
+            flex-wrap: wrap;
+        }
+        &-column {
+            &:first-child {
+                flex: 0 0 calc(50% - 10px);
+            }
+            &:nth-child(2) {
+                flex: 0 0 calc(50% - 10px);
+            }
+            &:nth-child(3) {
+                flex: 0 0 100%;
+            }
+
+            &-features {
+                flex-direction: row;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .product {
+        &-columns {
+            flex-wrap: wrap;
+        }
+        &-column {
+            &:first-child,
+            &:nth-child(2) {
+                flex: 0 0 calc(50% - 10px);
+            }
+            &:nth-child(3) {
+                flex: 0 0 100%;
+            }
+
+            &-features {
+                flex-direction: row;
+            }
+
+            &-cat {
+                font-size: 16px;
+                margin-bottom: 8px;
+            }
+
+            &-image {
+                height: 450px;
+            }
+
+            &-title {
+                font-size: 24px;
+                margin-bottom: 24px;
+            }
+
+            &-price {
+                margin-bottom: 24px;
+                .new {
+                    font-size: 32px;
+                }
+            }
+
+            &-actions {
+                margin-bottom: 24px;
+                gap: 8px;
+
+                .counter {
+                    height: 40px;
+
+                    .minus,
+                    .plus {
+                        width: 39px;
+                        height: 39px;
+                    }
+                    input {
+                        width: 50px;
+                    }
+                }
+
+                button {
+                    height: 40px;
+                }
+            }
+
+            &-info {
+                gap: 10px;
+            }
+
+            &-features {
+                gap: 10px;
+            }
+
+            &-feature {
+                font-size: 12px;
+                padding: 8px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .product {
+        &-columns {
+            flex-wrap: wrap;
+        }
+        &-column {
+            &:first-child,
+            &:nth-child(2) {
+                flex: 0 0 100%;
+            }
+
+            &-features {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            &-cat {
+                font-size: 14px;
+            }
+
+            &-image {
+                height: 450px;
+            }
+
+            &-title {
+                font-size: 18px;
+                margin-bottom: 16px;
+            }
+
+            &-price {
+                gap: 10px;
+                flex-direction: column-reverse;
+                .new {
+                    font-size: 20px;
+                }
+
+                .old {
+                    font-size: 18px;
+                }
+            }
+
+            &-actions {
+                margin-bottom: 24px;
+                gap: 8px;
+
+                .counter {
+                    input {
+                        font-size: 18px;
+                    }
+                }
+
+                button {
+                    height: 40px;
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+
+            &-info {
+                gap: 10px;
+
+                div {
+                    font-size: 14px;
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            &-feature {
+                padding: 16px 32px;
+                font-size: 14px;
             }
         }
     }

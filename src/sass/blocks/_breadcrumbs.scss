@@ -30,3 +30,14 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .breadcrumbs {
+        &-list {
+            flex-wrap: wrap;
+            li {
+                font-size: 10px;
+            }
+        }
+    }
+}

@@ -32,6 +32,18 @@
                 justify-content: center;
                 align-items: center;
                 position: relative;
+                transition: all 0.4s ease-in-out;
+                &:hover {
+                    svg {
+                        path {
+                            stroke: var(--red);
+                        }
+                    }
+
+                    .mobile-menu-item-name {
+                        color: var(--red);
+                    }
+                }
 
                 &-img {
                     .label {
