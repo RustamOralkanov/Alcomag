@@ -173,3 +173,110 @@
         }
     }
 }
+
+@media (max-width: 991px) {
+    .cart {
+        .col-12 {
+            &:last-child {
+                margin-top: 40px;
+            }
+        }
+
+        &-wrapper {
+            gap: 0;
+        }
+
+        &-item {
+            box-shadow: unset;
+            border-bottom: 1px solid var(--grey);
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .cart {
+        &-item {
+            padding: 16px 0;
+            gap: 8px;
+            position: relative;
+            &-image {
+                width: 80px;
+                height: 100px;
+            }
+
+            &-title {
+                font-size: 14px;
+                padding-right: 30px;
+            }
+
+            &-price {
+                gap: 4px;
+                .old {
+                    line-height: 1;
+                    font-size: 12px;
+                }
+
+                .new {
+                    line-height: 1;
+                    font-size: 16px;
+                }
+            }
+
+            &-delete {
+                i {
+                    font-size: 18px;
+                }
+            }
+
+            &-end {
+                position: absolute;
+                right: 0;
+                top: 16px;
+                height: 100%;
+                .counter {
+                    position: absolute;
+                    bottom: 32px;
+                    .minus,
+                    .plus {
+                        width: 24px;
+                        height: 24px;
+
+                        i {
+                            font-size: 12px;
+                        }
+                    }
+
+                    input {
+                        width: 40px;
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+        &-actions {
+            padding: 16px;
+            gap: 16px;
+
+            &-top {
+                h5 {
+                    font-size: 18px;
+                    margin-bottom: 0;
+                }
+
+                .price {
+                    font-weight: 700;
+                }
+            }
+
+            &-btn {
+                font-size: 14px;
+                font-weight: 400;
+                i {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

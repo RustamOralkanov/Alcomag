@@ -186,5 +186,17 @@
                 right: 0;
             }
         }
+
+        &-cart {
+            &-wrapper {
+                justify-content: flex-end;
+            }
+            &-back {
+                font-size: 12px;
+                font-weight: 500;
+                text-transform: uppercase;
+                line-height: 1;
+            }
+        }
     }
 }
