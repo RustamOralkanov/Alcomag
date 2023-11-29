@@ -406,7 +406,7 @@
                         z-index: -1;
 
                         &-type {
-                            width: calc(20% - 16px);
+                            width: calc(25% - 15px);
                             overflow: hidden;
                             h4 {
                                 color: var(--dark);
@@ -498,7 +498,7 @@
                             &-filter {
                                 gap: 10px;
                                 &-type {
-                                    width: calc(20% - 8px);
+                                    width: calc(25% - 8px);
                                     h4 {
                                         font-size: 16px;
                                     }

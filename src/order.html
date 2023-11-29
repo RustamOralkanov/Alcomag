@@ -34,7 +34,7 @@
             <section class="order mt-30">
                 <div class="container">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-xxl-4 col-xl-6 col-lg-6 col-12">
                             <form class="order-wrapper">
                                 <h3 class="order-title">Покупатель</h3>
                                 <span class="divider"></span>
@@ -89,78 +89,83 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="col-4">
-                            <div class="order-wrapper">
-                                <h3 class="order-title">Доставка</h3>
-                                <span class="divider"></span>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input"
-                                        type="radio"
-                                        name="delivery"
-                                    />
-                                    <label class="form-check-label"
-                                        >Cамовывоз <span>Бесплатно</span></label
-                                    >
+                        <div class="col-xxl-8 col-xl-6 col-lg-6 col-12">
+                            <div class="row">
+                                <div class="col-xxl-6 col-xl-12">
+                                    <div class="order-wrapper order-delivery">
+                                        <h3 class="order-title">Доставка</h3>
+                                        <span class="divider"></span>
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="delivery"
+                                            />
+                                            <label class="form-check-label"
+                                                >Cамовывоз
+                                                <span>Бесплатно</span></label
+                                            >
+                                        </div>
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="delivery"
+                                            />
+                                            <label class="form-check-label"
+                                                >Доставка курьером
+                                                <span>от 1 400 ₸</span></label
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="order-wrapper mt-20">
+                                        <h3 class="order-title">Оплата</h3>
+                                        <span class="divider"></span>
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="payment"
+                                            />
+                                            <label class="form-check-label"
+                                                >Оплата картой онлайн
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="payment"
+                                            />
+                                            <label class="form-check-label"
+                                                >Оплата наличными</label
+                                            >
+                                        </div>
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="radio"
+                                                name="payment"
+                                            />
+                                            <label class="form-check-label"
+                                                >Оплата через Kaspi QR</label
+                                            >
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input"
-                                        type="radio"
-                                        name="delivery"
-                                    />
-                                    <label class="form-check-label"
-                                        >Доставка курьером
-                                        <span>от 1 400 ₸</span></label
-                                    >
+                                <div class="col-xxl-6 col-xl-12">
+                                    <div class="order-wrapper order-price">
+                                        <h3 class="order-title">Ваш заказ</h3>
+                                        <span class="divider"></span>
+                                        <div class="order-total">
+                                            <h4>Сумма к оплате:</h4>
+                                            <h4>23 460 ₸</h4>
+                                        </div>
+                                        <button class="order-btn">
+                                            Подтвердить заказ
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="order-wrapper mt-20">
-                                <h3 class="order-title">Оплата</h3>
-                                <span class="divider"></span>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input"
-                                        type="radio"
-                                        name="payment"
-                                    />
-                                    <label class="form-check-label"
-                                        >Оплата картой онлайн
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input"
-                                        type="radio"
-                                        name="payment"
-                                    />
-                                    <label class="form-check-label"
-                                        >Оплата наличными</label
-                                    >
-                                </div>
-                                <div class="form-check">
-                                    <input
-                                        class="form-check-input"
-                                        type="radio"
-                                        name="payment"
-                                    />
-                                    <label class="form-check-label"
-                                        >Оплата через Kaspi QR</label
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="order-wrapper">
-                                <h3 class="order-title">Ваш заказ</h3>
-                                <span class="divider"></span>
-                                <div class="order-total">
-                                    <h4>Сумма к оплате:</h4>
-                                    <h4>23 460 ₸</h4>
-                                </div>
-                                <button class="order-btn">
-                                    Подтвердить заказ
-                                </button>
                             </div>
                         </div>
                     </div>
