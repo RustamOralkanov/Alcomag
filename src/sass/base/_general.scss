@@ -44,6 +44,10 @@
 
 .best {
     margin-top: 50px;
+
+    .cart-empty-container {
+        height: 65vh;
+    }
 }
 
 @media (max-width: 1200px) {
