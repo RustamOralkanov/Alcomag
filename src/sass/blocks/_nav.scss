@@ -369,6 +369,8 @@
                 gap: 24px;
                 border-right: 1px solid var(--grey);
                 padding: 40px 0;
+                height: 480px;
+                overflow: auto;
 
                 .list-item {
                     transition: all 0.4s ease-in-out;
