@@ -3,20 +3,9 @@
     padding-bottom: 30px;
     &-columns {
         display: flex;
-        gap: 20px;
     }
 
     &-column {
-        &:first-child {
-            flex: 0 0 calc(40% - 10px);
-        }
-        &:nth-child(2) {
-            flex: 0 0 calc(35% - 10px);
-        }
-        &:nth-child(3) {
-            flex: 0 0 calc(25% + 20px);
-        }
-
         &-image {
             width: 100%;
             height: 600px;
@@ -101,13 +90,14 @@
 
                 input {
                     font-size: 30px;
-                    font-weight: 600;
+                    font-weight: 400;
                     height: 49px;
-                    width: 80px;
+                    width: 60px;
                 }
             }
 
-            button {
+            button,
+            a {
                 background-color: var(--red);
                 border: 2px solid var(--red);
                 color: var(--white);
@@ -118,10 +108,7 @@
                 gap: 4px;
                 color: var(--white);
                 font-size: 16px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-                text-transform: uppercase;
+                font-weight: 400;
 
                 i {
                     font-size: 24px;
@@ -134,10 +121,10 @@
         &-info {
             display: flex;
             flex-direction: column;
-            gap: 16px;
+            gap: 10px;
             div {
                 color: var(--darkgrey);
-                font-size: 18px;
+                font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
@@ -145,7 +132,7 @@
                 span,
                 a {
                     color: var(--dark);
-                    font-size: 18px;
+                    font-size: 16px;
                     font-style: normal;
                     font-weight: 600;
                     line-height: normal;
@@ -185,6 +172,36 @@
                 align-items: center;
             }
         }
+
+        &-menu {
+            list-style-type: none;
+            padding-left: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 0;
+            position: sticky;
+            top: 20px;
+            &-link {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 18px;
+                font-weight: 500;
+                color: var(--dark);
+                transition: all 0.4s ease-in-out;
+                &:hover {
+                    color: var(--red);
+
+                    svg {
+                        path {
+                            transition: all 0.4s ease-in-out;
+                            fill: var(--red);
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -194,16 +211,6 @@
             flex-wrap: wrap;
         }
         &-column {
-            &:first-child {
-                flex: 0 0 calc(50% - 10px);
-            }
-            &:nth-child(2) {
-                flex: 0 0 calc(50% - 10px);
-            }
-            &:nth-child(3) {
-                flex: 0 0 100%;
-            }
-
             &-features {
                 flex-direction: row;
             }
@@ -215,16 +222,15 @@
     .product {
         &-columns {
             flex-wrap: wrap;
+            gap: 20px;
         }
         &-column {
-            &:first-child,
-            &:nth-child(2) {
-                flex: 0 0 calc(50% - 10px);
+            &-special {
+                border-bottom: 1px solid var(--grey);
+                border-top: 1px solid var(--grey);
+                padding-top: 20px;
+                padding-bottom: 20px;
             }
-            &:nth-child(3) {
-                flex: 0 0 100%;
-            }
-
             &-features {
                 flex-direction: row;
             }
@@ -295,11 +301,6 @@
             gap: 30px;
         }
         &-column {
-            &:first-child,
-            &:nth-child(2) {
-                flex: 0 0 100%;
-            }
-
             &-features {
                 flex-direction: column;
                 gap: 10px;

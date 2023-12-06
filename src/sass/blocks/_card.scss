@@ -160,6 +160,11 @@
         gap: 20px;
         flex-wrap: wrap;
     }
+
+    &-swiper {
+        padding: 30px 20px;
+        margin: -30px -20px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -261,6 +266,15 @@
             .old {
                 font-size: 12px;
             }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        &-swiper {
+            padding: 20px 10px;
+            margin: -20px -10px;
         }
     }
 }
