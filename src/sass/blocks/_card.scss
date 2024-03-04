@@ -1,280 +1,236 @@
 .card {
-    padding: 16px;
-    width: calc(25% - 15px);
-    position: relative;
+    width: 25%;
+    background-color: var(--white);
+    border-radius: var(--radius);
     border: unset;
-    border-radius: 0;
-    box-shadow: var(--shadow);
-    transition: all 0.4s ease-in-out;
+    transition: var(--transition);
+    overflow: hidden;
 
     &:hover {
-        box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.3);
+        box-shadow: var(--shadow);
+    }
+
+    &-inner {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        position: relative;
+    }
+
+    &-image {
+        width: 100%;
+        max-height: 200px;
+        height: 100%;
+        margin-bottom: 8px;
+        display: block;
+
+        img {
+            display: block;
+            max-height: 200px;
+            height: 100%;
+            margin: 0 auto;
+            object-fit: contain;
+        }
     }
 
     &-label {
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding: 4px 12px;
         background-color: var(--red);
+        width: fit-content;
+        position: absolute;
+        top: 16px;
+        left: 16px;
         color: var(--white);
-        font-size: 14px;
+        font-size: 12px;
+        border-radius: var(--radius);
+        padding: 3px 14px;
     }
 
     &-favorite {
+        background-color: var(--green);
+        width: fit-content;
         position: absolute;
         top: 16px;
         right: 16px;
-        cursor: pointer;
-
-        svg {
-            height: 36px;
-            width: 36px;
-        }
+        color: var(--white);
+        border-radius: var(--radius);
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         &:hover {
             svg {
                 fill: var(--red);
+
+                path {
+                    stroke: var(--red);
+                    transition: var(--transition);
+                }
+            }
+        }
+
+        svg {
+            width: 24px;
+            height: 24px;
+
+            path {
+                transition: var(--transition);
             }
         }
 
         &.active {
             svg {
                 fill: var(--red);
+
+                path {
+                    stroke: var(--red);
+                    transition: var(--transition);
+                }
             }
         }
     }
 
-    &-img {
-        width: 100%;
-        height: 277px;
-        display: block;
+    &-body {
+        padding: 0;
+    }
+
+    &-partnumber {
+        color: var(--dark-grey);
+        font-size: 12px;
+        font-weight: 400;
         margin-bottom: 8px;
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
+    }
+
+    &-name {
+        color: var(--black);
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 150%;
+        margin-bottom: 16px;
+        height: 52px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &-prices {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 16px;
+
+        &-new {
+            color: var(--black);
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+
+        &-old {
+            color: var(--dark-grey);
+            text-decoration: line-through;
+            font-size: 14px;
+            font-weight: 300;
+            margin-bottom: 0;
         }
     }
 
-    &-category {
-        color: var(--darkgrey);
-        font-family: "Montserrat";
+    &-delivery {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--black);
         font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin-bottom: 8px;
+        margin-bottom: 16px;
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
     }
 
-    &-title {
-        h4 {
-            color: var(--dark);
-            font-family: "Montserrat";
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 8px;
+    &-btn {
+        width: 100%;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &-viewed {
+        display: flex;
+        flex-direction: row;
+        padding: 8px;
+        gap: 8px;
+
+        &-img {
+            width: 80px;
+            height: 80px;
+            display: block;
+            flex: 0 0 auto;
+
+            img {
+                max-width: 80px;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &-texts {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &-title {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 0;
+            color: var(--black);
             display: -webkit-box;
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
-            height: 44px;
+            height: 38px;
         }
-    }
 
-    &-info {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        margin-bottom: 16px;
-
-        &-item {
-            display: flex;
-            gap: 8px;
-            align-items: flex-end;
-            font-size: 14px;
-            font-weight: 400;
-            i {
-                font-size: 24px;
-                line-height: 1;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 28px;
-                height: 28px;
-            }
-
-            .icon-bottle {
-                font-size: 28px;
-            }
-        }
-    }
-
-    &-price {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        margin-bottom: 16px;
-        .old {
-            color: #c4c4c4;
-            font-family: "Montserrat";
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: normal;
-            text-decoration-line: line-through;
-        }
-        .new {
-            color: var(--dark);
-            font-family: "Montserrat";
-            font-size: 24px;
+        &-price {
+            font-size: 16px;
             font-weight: 700;
-        }
-    }
-
-    &-buy {
-        background-color: var(--red);
-        color: var(--white);
-        border: unset;
-        padding: 14px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-        font-size: 18px;
-        line-height: 1;
-        transition: all 0.5s ease-in-out;
-        i {
-            font-size: 24px;
-            font-weight: 600;
-        }
-
-        &:hover {
-            background-color: #871c0a;
-        }
-    }
-
-    &-wrapper {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-
-    &-swiper {
-        padding: 30px 20px;
-        margin: -30px -20px;
-    }
-}
-
-@media (max-width: 1200px) {
-    .card {
-        width: calc(33% - 11px);
-
-        &:nth-child(7) {
-            display: none;
-        }
-        &:nth-child(8) {
-            display: none;
-        }
-    }
-}
-@media (max-width: 992px) {
-    .card {
-        padding: 8px;
-        &-wrapper {
-            gap: 10px;
-        }
-        width: calc(33% - 6px);
-
-        &-label {
-            font-size: 8px;
+            margin-bottom: 0;
+            color: var(--black);
         }
 
         &-favorite {
-            top: 8px;
-            right: 8px;
             svg {
-                width: 24px;
-                height: 24px;
-            }
-        }
-
-        &-img {
-            height: 207px;
-        }
-
-        &-category {
-            font-size: 10px;
-        }
-
-        &-title {
-            h4 {
-                font-size: 14px;
-                height: 34px;
-            }
-        }
-
-        &-info {
-            &-item {
-                font-size: 12px;
-                i {
-                    font-size: 18px;
-                    width: 20px;
-                    height: 20px;
-                }
-
-                .icon-bottle {
-                    font-size: 18px;
+                path {
+                    stroke: var(--red);
                 }
             }
-        }
 
-        &-price {
-            .new {
-                font-size: 16px;
+            &:hover {
+                transition: var(--transition);
+                svg {
+                    fill: var(--red);
+                }
             }
 
-            .old {
-                font-size: 16px;
+            &.active {
+                transition: var(--transition);
+                svg {
+                    fill: var(--red);
+                    path {
+                        stroke: var(--red);
+                    }
+                }
             }
-        }
-
-        &-buy {
-            font-size: 14px;
-            padding: 8px 0;
-
-            i {
-                font-size: 14px;
-            }
-        }
-
-        &:nth-child(7) {
-            display: none;
-        }
-        &:nth-child(8) {
-            display: none;
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    .card {
-        width: calc(50% - 5px);
-        &-price {
-            gap: 8px;
-            .old {
-                font-size: 12px;
-            }
-        }
-    }
-}
-
-@media (max-width: 576px) {
-    .card {
-        &-swiper {
-            padding: 20px 10px;
-            margin: -20px -10px;
         }
     }
 }

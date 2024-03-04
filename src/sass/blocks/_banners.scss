@@ -1,0 +1,45 @@
+.banners {
+    margin-top: 24px;
+
+    &-carousel {
+        width: 100%;
+        height: 500px;
+        border-radius: var(--radius);
+        overflow: hidden;
+        position: relative;
+
+        .swiper-pagination-bullet-active {
+            background-color: var(--green);
+        }
+    }
+
+    &-slide {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-btns {
+        position: absolute;
+        z-index: 90;
+        left: 16px;
+        bottom: 16px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &-button {
+        &-prev,
+        &-next {
+            width: 40px;
+            height: 40px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
