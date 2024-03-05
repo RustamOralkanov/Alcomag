@@ -6,13 +6,6 @@
         margin-bottom: 60px;
     }
 
-    &-title {
-        color: var(--black);
-        font-size: 28px;
-        font-weight: 700;
-        margin-bottom: 0;
-    }
-
     &-btns {
         display: flex;
         align-items: center;
@@ -33,5 +26,42 @@
     .news-carousel {
         margin: -20px;
         padding: 20px;
+    }
+}
+
+.cards {
+    &-title {
+        color: $black;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .cards {
+        &-title {
+            font-size: 18px;
+        }
+
+        &-btn {
+            width: 30px;
+            height: 30px;
+        }
+
+        &-carousel,
+        &-carousel-second,
+        .news-carousel {
+            margin: 0px;
+            padding: 0px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .cards {
+        &-top {
+            margin-bottom: 30px;
+        }
     }
 }
